@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+}
+
+.logo{
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.begin{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.begin button{
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  background: lightgreen;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.begin button:hover{
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.start_button{
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+}

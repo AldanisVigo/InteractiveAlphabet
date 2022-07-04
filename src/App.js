@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import "./App.css"
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+const App = () => {
+    const [menu,setMenu] = useState([
+        {
+            route : "/alphabet",
+            title: "Learn The Alphabet"
+        },
+        {
+            route : "/numbers",
+            title : "Learn the Numbers"
+        }
+    ])
+    return <div className="home">
+        <h1>Welcome to Neuron Stimuli</h1>
+        <nav>
+            <ul style={{listStyleType : 'none'}}>
+                {menu.map((m,i)=><li><Link className="menu_link" key={i} to={m.route}>{m.title}</Link></li>)}
+            </ul>
+        </nav>
     </div>
-  );
 }
 
-export default App;
+export default App

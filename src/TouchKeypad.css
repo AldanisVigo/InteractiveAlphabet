@@ -1,0 +1,30 @@
+.touch_keypad{
+    border: 1px solid black;
+    max-width: 250px;
+    padding: 20px;
+    border-radius: 20px;
+    align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.touch_keypad_placeholder {
+    color: lightgray;
+}
+
+.touch_keypad_components{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+}
+
+.touch_keypad_left_components button {
+    position: relative;
+    top: 88px;
+}
+
+.touch_keypad_right_components button {
+    position: relative;
+    top: 88px;
+}

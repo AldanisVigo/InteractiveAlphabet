@@ -1,0 +1,21 @@
+
+.interactive_alphabet{
+    max-width: 400px;
+    display: grid;
+    grid-template-columns : 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 6;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.interactive_alphabet_letter{
+    padding: 20px;
+    font-weight: 1000;
+    border-radius: 10px;
+    color: lightgreen;
+    background: black;
+}
+
+.interactive_alphabet_letter:hover{
+    cursor: pointer;
+}
